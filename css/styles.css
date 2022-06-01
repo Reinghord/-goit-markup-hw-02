@@ -107,6 +107,9 @@ body {
 .team-list {
   list-style: none;
 }
+.team-list li {
+  background: #ffffff;
+}
 .section4-h3 {
   font-weight: 500;
   font-size: 16px;
