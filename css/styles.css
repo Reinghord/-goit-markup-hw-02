@@ -83,8 +83,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 /* Index - Section 3 (Our work) */
