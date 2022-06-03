@@ -1,12 +1,29 @@
+:root {
+  --colorPrimary: #212121;
+  --colorSecondary: #2196f3;
+  --colorTertiary: #757575;
+  --colorLogoPrimary: #000000;
+  --colorHero: #ffffff;
+  --colorFooterLink: rgba(255, 255, 255, 0.6);
+
+  --bgColorPrimary: #ffffff;
+  --bgColorSecondary: #2f303a;
+  --bgColorTertiary: #f5f4fa;
+
+  --btnColorPrimary: #ffffff;
+  --btnBgColor: #2196f3;
+  --btnBgColorHov: #188ce8;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--colorPrimary);
+  background-color: var(--bgColorPrimary);
   letter-spacing: 0.03em;
 }
 /* Header */
 .logo {
-  color: #000000;
+  color: var(--colorLogoPrimary);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -14,7 +31,7 @@ body {
   line-height: 1.19;
 }
 .web {
-  color: #2196f3;
+  color: var(--colorSecondary);
 }
 /* Navigation list */
 .list,
@@ -30,16 +47,19 @@ body {
 }
 .list a:hover,
 .list a:focus {
-  color: #2196f3;
+  color: var(--colorSecondary);
+}
+.current {
+  color: var(--colorSecondary);
 }
 /* Header contacts */
 .contacts {
-  color: #757575;
+  color: var(--colorTertiary);
   text-decoration: none;
 }
 .contacts:hover,
 .contacts:focus {
-  color: #2196f3;
+  color: var(--colorSecondary);
 }
 .list,
 .contacts-list {
@@ -47,10 +67,10 @@ body {
 }
 /* Index - Section 1 (Head) */
 .head {
-  background-color: #2f303a;
+  background-color: var(--bgColorSecondary);
 }
 .h1-index {
-  color: #ffffff;
+  color: var(--colorHero);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -59,14 +79,18 @@ body {
   text-transform: uppercase;
 }
 .button-index {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--btnColorPrimary);
+  background-color: var(--btnBgColor);
   border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+}
+.button-index:hover,
+.button-index:focus {
+  background-color: var(--btnBgColorHov);
 }
 /* Index - Section 2 (Features) */
 .h2-hide {
@@ -76,7 +100,7 @@ body {
   list-style: none;
 }
 .feature-list .text {
-  color: #757575;
+  color: var(--colorTertiary);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -93,12 +117,15 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+.work__list {
+  list-style: none;
+}
 /* Index - Section 4 (Our Team) */
 .our-team {
-  background: #f5f4fa;
+  background: var(--bgColorTertiary);
 }
 .team-list .text {
-  color: #757575;
+  color: var(--colorTertiary);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -107,7 +134,7 @@ body {
   list-style: none;
 }
 .team-list li {
-  background: #ffffff;
+  background: var(--bgColorPrimary);
 }
 .section4-h3 {
   font-weight: 500;
@@ -117,8 +144,8 @@ body {
 }
 /* Footer */
 .footer {
-  color: #ffffff;
-  background-color: #2f303a;
+  color: var(--colorHero);
+  background-color: var(--bgColorSecondary);
 }
 .logo-footer {
   color: inherit;
@@ -130,15 +157,15 @@ body {
   line-height: 1.19;
 }
 .logo-footer:visited {
-  color: #ffffff;
+  color: var(--colorHero);
 }
 .footer .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--colorFooterLink);
   text-decoration: none;
 }
 .footer .link:hover,
 .footer .link:focus {
-  color: #2196f3;
+  color: var(--colorSecondary);
   text-decoration: none;
 }
 .address {
@@ -146,12 +173,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+.address__list {
+  list-style: none;
+}
 /* Portfolio - Categories */
 .list-categories {
   list-style: none;
 }
 .button-categories {
-  background-color: #f5f4fa;
+  background-color: var(--bgColorTertiary);
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -160,8 +190,8 @@ body {
 }
 .button-categories:hover,
 .button-categories:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--colorHero);
+  background-color: var(--btnBgColor);
 }
 /* Portfolio - Projects */
 .list-projects {
@@ -176,7 +206,13 @@ body {
 .projects-text {
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
+  color: var(--colorTertiary);
+}
+.list-projects a {
+  text-decoration: none;
+}
+.list-projects a:visited {
+  color: inherit;
 }
 /* Buttons style */
 button {
